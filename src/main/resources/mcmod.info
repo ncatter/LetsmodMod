@@ -1,0 +1,21 @@
+[
+{
+  "modid": "Letsmodmod",
+  "name": "Letsmod Mod",
+  "description": "my first mod!",
+  "version": "1.0",
+  "mcversion": "1.7.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "ncatter"
+  ],
+  "credits": "pahimar",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
