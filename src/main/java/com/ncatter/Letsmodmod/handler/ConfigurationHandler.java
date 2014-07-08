@@ -1,4 +1,4 @@
-package com.ncatter.Letsmodmod;
+package com.ncatter.Letsmodmod.handler;
 
 
 import net.minecraftforge.common.config.Configuration;
@@ -7,9 +7,11 @@ import java.io.File;
 
 public class ConfigurationHandler
 {
+    public static Configuration configuration;
+
     public static void init(File configFile)
     {
-        Configuration configuration = new Configuration(configFile);
+         configuration = new Configuration(configFile);
 
         try{
             configuration.load();
@@ -22,7 +24,10 @@ public class ConfigurationHandler
         }
         finally
         {
-            configuration.save();
+            if(configuration.hasChanged())
+            {
+                configuration.save();
+            }
         }
     }
 }
